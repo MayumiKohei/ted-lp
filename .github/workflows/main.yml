@@ -19,7 +19,8 @@ jobs:
             - name: Setup Node.js
               uses: actions/setup-node@v3
               with:
-                  node-version: 16 # Next.js の推奨バージョン
+                  node-version: 20
+                  cache: yarn
 
             # パッケージのインストール
             - name: Install dependencies
@@ -34,3 +35,7 @@ jobs:
               run: |
                   npm install -g firebase-tools
                   firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+
+            # Node.js のバージョン確認
+            - name: Check Node.js version
+              run: node -v
