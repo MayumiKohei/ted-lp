@@ -1,0 +1,36 @@
+name: Deploy to Firebase Hosting
+
+on:
+    push:
+        branches:
+            - main # main ブランチへのプッシュをトリガーにする
+    workflow_dispatch: # 手動デプロイも可能にする
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            # リポジトリをチェックアウト
+            - name: Checkout code
+              uses: actions/checkout@v3
+
+            # Node.js のセットアップ
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 16 # Next.js の推奨バージョン
+
+            # パッケージのインストール
+            - name: Install dependencies
+              run: yarn install
+
+            # Next.js のビルド
+            - name: Build Next.js
+              run: yarn build
+
+            # Firebase Hosting にデプロイ
+            - name: Deploy to Firebase Hosting
+              run: |
+                  npm install -g firebase-tools
+                  firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}

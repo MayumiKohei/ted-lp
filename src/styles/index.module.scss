@@ -1,0 +1,509 @@
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+
+	&__top {
+		position: relative;
+
+		&__img {
+			display: block;
+			max-width: none;
+			transform: translate(-142px, 0);
+		}
+
+		&__content {
+			position: absolute;
+			top: 825px;
+			left: 5%;
+			background-color: #fff;
+			width: 90%;
+			height: 225px;
+			border-radius: 10px;
+			text-align: center;
+
+			p {
+				font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
+				font-size: 18px;
+				font-weight: 800;
+				padding: 20px;
+				line-height: 2;
+			}
+
+			span {
+				font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
+				font-size: 13px;
+				font-weight: 800;
+				font-feature-settings: "palt", "ruby";
+				color: #ff5252;
+				display: block;
+			}
+
+			&__link {
+				font-family: "Yu Gothic", "游ゴシック", sans-serif;
+				font-size: 17px;
+				font-weight: 700;
+				color: #fff;
+				background-color: #66d1b0;
+				padding: 15px 50px;
+				border-radius: 20px;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__imgStack {
+		position: relative;
+		height: 1150px;
+
+		&__1 {
+			position: absolute;
+			top: -20px;
+			z-index: 2;
+		}
+
+		&__2 {
+			position: absolute;
+			top: 100px;
+			z-index: 1;
+			transform: translate(18px, 0);
+		}
+
+		&__3 {
+			position: absolute;
+			top: 500px;
+			z-index: 3;
+			transform: translate(43px, 0);
+		}
+	}
+
+	&__oneSelf {
+		background-color: rgba($color: #d8d1d5, $alpha: 0.32);
+		width: 94%;
+		margin-left: 3%;
+		border-radius: 10px;
+		padding: 50px 20px;
+
+		p {
+			font-family: "trajan-pro-3", serif;
+			font-weight: 600;
+			font-size: 10px;
+			text-align: center;
+		}
+
+		&__imgContainer {
+			position: relative;
+			width: fit-content;
+			margin: 0 auto;
+
+			&__img {
+				display: block;
+				margin-top: 30px;
+			}
+
+			&__icon {
+				position: absolute;
+				right: -80px;
+				bottom: 0;
+			}
+		}
+
+		&__content {
+			margin-top: 15px;
+
+			h3 {
+				line-height: 3;
+				text-align: center;
+			}
+
+			span {
+				font-family: "Noto Sans JP", sans-serif;
+				font-size: 12px;
+				text-align: start;
+			}
+		}
+	}
+
+	&__reviews {
+		margin-top: 50px;
+
+		&__content {
+			background-color: rgba($color: #d8d1d5, $alpha: 0.32);
+			width: 94%;
+			margin-left: 3%;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			padding: 20px;
+
+			&__hd {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				margin-bottom: 10px;
+
+				p {
+					font-family: "Yu Gothic", "游ゴシック", sans-serif;
+					font-size: 15px;
+					font-weight: 700;
+					line-height: 1.3;
+					margin-top: 10px;
+					margin-left: 10px;
+
+					span {
+						font-family: "Yu Gothic", "游ゴシック", sans-serif;
+						font-size: 13px;
+						font-weight: 700;
+					}
+				}
+
+				&__star {
+					margin-left: 30px;
+				}
+			}
+
+			&__title {
+				font-family: "Yu Gothic", "游ゴシック", sans-serif;
+				font-size: 15px;
+				font-weight: 700;
+				color: #ff6565;
+				padding: 5px 0;
+			}
+
+			&__main {
+				font-family: "Noto Sans JP", sans-serif;
+				font-size: 12px;
+				color: #383838;
+				line-height: 1.6;
+			}
+		}
+	}
+
+	&__plan {
+		margin-top: 100px;
+
+		&__section {
+			background-color: rgba($color: #d8d1d5, $alpha: 0.32);
+			padding-bottom: 30px;
+			margin-top: 10px;
+			position: relative;
+			z-index: 3;
+
+			&__hd {
+				position: relative;
+				background-color: rgba($color: #d8d1d5, $alpha: 0.32);
+
+				&__title {
+					position: relative;
+					z-index: 2;
+					text-align: center;
+					padding-top: 50px;
+
+					p {
+						padding-bottom: 40px;
+					}
+				}
+
+				&__img {
+					position: absolute;
+					top: -60px;
+					left: 30%;
+					z-index: 1;
+				}
+			}
+
+			&__main {
+				&__content {
+					position: relative;
+
+					&__img {
+						position: relative;
+						z-index: 2;
+					}
+
+					&__pop {
+						color: #fff;
+						background-color: #ff7c7c;
+						padding: 2px 15px;
+						position: absolute;
+						top: 10px;
+						left: 20px;
+						z-index: 3;
+						font-family: "Noto Sans JP", sans-serif;
+						font-size: 13px;
+					}
+
+					&__info {
+						display: flex;
+						align-items: center;
+						position: absolute;
+						top: 200px;
+						left: 30px;
+						z-index: 3;
+						background-color: rgba($color: #fff, $alpha: 0.8);
+						padding: 5px 15px;
+						border-radius: 5px;
+						gap: 5px;
+					}
+				}
+			}
+
+			&__title {
+				font-family: "Noto Sans JP", sans-serif;
+				font-size: 13px;
+				font-weight: 600;
+				margin: 15px 20px;
+			}
+
+			&__price {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				background-color: #fff;
+				padding: 20px 30px;
+				margin: 20px 30px;
+				border-radius: 5px;
+
+				&__name {
+					font-family: "Yu Gothic", "游ゴシック", sans-serif;
+					font-size: 15px;
+					font-weight: 700;
+				}
+
+				span {
+					font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
+					font-size: 31px;
+					font-weight: 600;
+					color: #fc7171;
+				}
+
+				&__tax {
+					font-family: "Yu Gothic", "游ゴシック", sans-serif;
+					font-size: 10px;
+					font-weight: 700;
+				}
+			}
+
+			&__category {
+				margin: 0 auto;
+				margin-bottom: 75px;
+			}
+
+			&__p {
+				font-family: "Yu Gothic", "游ゴシック", sans-serif;
+				font-size: 13px;
+				font-weight: 700;
+				color: #acacac;
+				text-align: center;
+				margin-bottom: 15px;
+			}
+
+			&__p1 {
+				font-family: "Noto Sans JP", sans-serif;
+				font-size: 15px;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			&__p2 {
+				font-family: "Noto Sans JP", sans-serif;
+				font-size: 13px;
+				font-weight: 600;
+				text-align: center;
+			}
+		}
+
+		&__section2 {
+			background-color: rgba($color: #d8d1d5, $alpha: 0.32);
+			padding-bottom: 30px;
+			margin-top: 10px;
+			position: relative;
+			z-index: 2;
+		}
+
+		&__section3 {
+			background-color: rgba($color: #d8d1d5, $alpha: 0.32);
+			padding-bottom: 30px;
+			margin-top: 10px;
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+	&__shooting {
+		margin-top: 100px;
+
+		&__section {
+			margin-top: 30px;
+
+			&__hd {
+				display: flex;
+				gap: 30px;
+				margin-left: 5%;
+			}
+
+			&__main {
+				margin-top: 10px;
+				margin-left: 10%;
+				padding: 5px 0 0 20px;
+				border-left: 1px solid #707070;
+				line-height: 2;
+				min-height: 150px;
+			}
+		}
+	}
+
+	&__last {
+		margin-top: 100px;
+		text-align: center;
+
+		&__1 {
+			font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
+			font-size: 16px;
+			font-weight: 800;
+		}
+
+		&__2 {
+			font-family: "trajan-pro-3", serif;
+			font-weight: 600;
+			font-size: 16px;
+			margin-top: 40px;
+		}
+
+		&__name {
+			font-family: "trajan-pro-3", serif;
+			font-weight: 600;
+			font-size: 14px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		&__img {
+			max-width: none;
+			transform: translate(-67px, 0);
+		}
+
+		&__footer {
+			font-family: "trajan-pro-3", serif;
+			font-weight: 600;
+			font-size: 13px;
+			margin: 20px;
+		}
+	}
+}
+
+.ml {
+	margin-left: 15%;
+	margin-bottom: 100px;
+}
+
+.mb {
+	margin-bottom: 30px;
+}
+
+.mb5 {
+	margin-bottom: 5px;
+}
+
+.h2 {
+	font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.h3 {
+	font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.c70 {
+	color: #707070;
+}
+
+.c65 {
+	color: #656565;
+}
+
+.c39 {
+	color: #393939;
+}
+
+.c4d {
+	color: #4d4d4d;
+}
+
+.s12 {
+	font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
+	font-size: 12px;
+	font-weight: 800;
+}
+
+.s13 {
+	font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
+	font-size: 13px;
+	font-weight: 800;
+}
+
+.s14 {
+	font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.trj10 {
+	font-family: "trajan-pro-3", serif;
+	font-weight: 600;
+	font-size: 10px;
+	text-align: center;
+}
+
+.bgw {
+	background-color: #fff;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+.mb40 {
+	margin-bottom: 40px;
+}
+
+.zi2 {
+	z-index: 2;
+}
+
+.yen {
+	font-size: 25px !important;
+}
+
+.line {
+	color: #fff;
+	background-color: #f27474;
+	font-family: "Yu Gothic", "游ゴシック", sans-serif;
+	font-size: 21px;
+	font-weight: 700;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: 15px 10% 40px 10%;
+}
+
+.line_s {
+	color: #fff;
+	background-color: #f27474;
+	font-family: "Yu Gothic", "游ゴシック", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 5px 2px;
+	text-decoration: none;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	width: 70%;
+	margin: 15px 10% 10px 10%;
+}
