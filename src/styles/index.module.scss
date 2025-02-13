@@ -6,12 +6,6 @@
 	&__top {
 		position: relative;
 
-		&__img {
-			display: block;
-			max-width: none;
-			transform: translate(-142px, 0);
-		}
-
 		&__content {
 			position: absolute;
 			top: 825px;
@@ -60,20 +54,26 @@
 			position: absolute;
 			top: -20px;
 			z-index: 2;
+			width: 90%;
+			height: auto;
 		}
 
 		&__2 {
 			position: absolute;
 			top: 100px;
 			z-index: 1;
-			transform: translate(18px, 0);
+			width: 90%;
+			height: auto;
+			left: 50%;
+			transform: translate(-50%);
 		}
 
 		&__3 {
 			position: absolute;
 			top: 500px;
 			z-index: 3;
-			transform: translate(43px, 0);
+			width: 90%;
+			right: 0;
 		}
 	}
 
@@ -158,6 +158,12 @@
 
 				&__star {
 					margin-left: 30px;
+
+					@media (max-width: 390px) {
+						margin-left: 5px;
+						width: 110px;
+						height: auto;
+					}
 				}
 			}
 
@@ -237,12 +243,20 @@
 						align-items: center;
 						position: absolute;
 						top: 200px;
-						left: 30px;
+						left: 50%;
+						transform: translateX(-50%);
 						z-index: 3;
 						background-color: rgba($color: #fff, $alpha: 0.8);
 						padding: 5px 15px;
 						border-radius: 5px;
 						gap: 5px;
+						width: 90%;
+
+						p {
+							@media (max-width: 390px) {
+								font-size: 11px;
+							}
+						}
 					}
 				}
 			}
@@ -262,6 +276,11 @@
 				padding: 20px 30px;
 				margin: 20px 30px;
 				border-radius: 5px;
+
+				@media (max-width: 390px) {
+					gap: 10px;
+					padding: 20px 10px;
+				}
 
 				&__name {
 					font-family: "Yu Gothic", "游ゴシック", sans-serif;
@@ -379,7 +398,6 @@
 
 		&__img {
 			max-width: none;
-			transform: translate(-67px, 0);
 		}
 
 		&__footer {
@@ -492,6 +510,10 @@
 	justify-content: center;
 	width: 80%;
 	margin: 15px 10% 40px 10%;
+
+	@media (max-width: 390px) {
+		font-size: 18px;
+	}
 }
 
 .line_s {
