@@ -6,15 +6,46 @@
 	&__top {
 		position: relative;
 
+		&__img {
+			width: 100%;
+			height: auto;
+			z-index: 1;
+		}
+
 		&__content {
 			position: absolute;
-			top: 825px;
+			top: 425px;
 			left: 5%;
 			background-color: #fff;
 			width: 90%;
 			height: 225px;
 			border-radius: 10px;
 			text-align: center;
+			z-index: 2;
+
+			@media (max-width: 420px) {
+				position: absolute;
+				top: 405px;
+				left: 5%;
+				background-color: #fff;
+				width: 90%;
+				height: 225px;
+				border-radius: 10px;
+				text-align: center;
+				z-index: 2;
+			}
+
+			@media (max-width: 390px) {
+				position: absolute;
+				top: 355px;
+				left: 5%;
+				background-color: #fff;
+				width: 90%;
+				height: 225px;
+				border-radius: 10px;
+				text-align: center;
+				z-index: 2;
+			}
 
 			p {
 				font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
@@ -70,6 +101,7 @@
 
 		&__3 {
 			position: absolute;
+			height: auto;
 			top: 500px;
 			z-index: 3;
 			width: 90%;
@@ -99,6 +131,9 @@
 			&__img {
 				display: block;
 				margin-top: 30px;
+				height: auto;
+				width: 190px;
+				border-radius: 50%;
 			}
 
 			&__icon {
@@ -223,6 +258,7 @@
 
 					&__img {
 						position: relative;
+						height: auto;
 						z-index: 2;
 					}
 
@@ -242,7 +278,7 @@
 						display: flex;
 						align-items: center;
 						position: absolute;
-						top: 200px;
+						top: 245px;
 						left: 50%;
 						transform: translateX(-50%);
 						z-index: 3;
@@ -251,6 +287,60 @@
 						border-radius: 5px;
 						gap: 5px;
 						width: 90%;
+
+						@media (max-width: 390px) {
+							display: flex;
+							align-items: center;
+							position: absolute;
+							top: 220px;
+							left: 50%;
+							transform: translateX(-50%);
+							z-index: 3;
+							background-color: rgba($color: #fff, $alpha: 0.8);
+							padding: 5px 15px;
+							border-radius: 5px;
+							gap: 5px;
+							width: 90%;
+						}
+
+						&__last {
+							display: flex;
+							align-items: center;
+							position: absolute;
+							top: 200px;
+							left: 50%;
+							transform: translateX(-50%);
+							z-index: 3;
+							background-color: rgba($color: #fff, $alpha: 0.8);
+							padding: 5px 15px;
+							border-radius: 5px;
+							gap: 5px;
+							width: 90%;
+
+							@media (max-width: 390px) {
+								display: flex;
+								align-items: center;
+								position: absolute;
+								top: 175px;
+								left: 50%;
+								transform: translateX(-50%);
+								z-index: 3;
+								background-color: rgba(
+									$color: #fff,
+									$alpha: 0.8
+								);
+								padding: 5px 15px;
+								border-radius: 5px;
+								gap: 5px;
+								width: 90%;
+							}
+
+							p {
+								@media (max-width: 390px) {
+									font-size: 11px;
+								}
+							}
+						}
 
 						p {
 							@media (max-width: 390px) {
@@ -397,7 +487,7 @@
 		}
 
 		&__img {
-			max-width: none;
+			height: auto;
 		}
 
 		&__footer {
@@ -420,6 +510,10 @@
 
 .mb5 {
 	margin-bottom: 5px;
+}
+
+.locaimg {
+	height: auto;
 }
 
 .h2 {

@@ -49,7 +49,7 @@ const LandingPage = ({
 					<span>＼お手軽プラン〜宮古島満喫豪華プランもご用意／</span>
 					<br />
 					<Link
-						href="/"
+						href="#targetSection"
 						className={styles.container__top__content__link}
 					>
 						撮影プランを見る
@@ -259,7 +259,7 @@ const LandingPage = ({
 				</div>
 			</div>
 
-			<div className={styles.container__plan}>
+			<div className={styles.container__plan} id="targetSection">
 				<div className={styles.container__plan__section}>
 					<div className={styles.container__plan__section__hd}>
 						<div
@@ -578,7 +578,7 @@ const LandingPage = ({
 							</span>
 							<div
 								className={cn(
-									styles.container__plan__section__main__content__info,
+									styles.container__plan__section__main__content__info__last,
 									styles.s13
 								)}
 							>
@@ -926,59 +926,53 @@ const LandingPage = ({
 						“Miyako Island’s location”
 					</p>
 					<Image
-						src={images.image_8.url}
-						alt="画像8"
-						width={images.image_8.width}
-						height={images.image_8.height}
-						className={styles.mb5}
-					/>
-					<Image
 						src={images.image_9.url}
 						alt="画像9"
 						width={images.image_9.width}
 						height={images.image_9.height}
-						className={styles.mb5}
+						className={cn(styles.mb5, styles.locaimg)}
 					/>
 					<Image
 						src={images.image_10.url}
 						alt="画像10"
 						width={images.image_10.width}
 						height={images.image_10.height}
-						className={styles.mb5}
+						className={cn(styles.mb5, styles.locaimg)}
 					/>
 					<Image
 						src={images.image_11.url}
 						alt="画像11"
 						width={images.image_11.width}
 						height={images.image_11.height}
-						className={styles.mb5}
+						className={cn(styles.mb5, styles.locaimg)}
 					/>
 					<Image
 						src={images.image_12.url}
 						alt="画像12"
 						width={images.image_12.width}
 						height={images.image_12.height}
-						className={styles.mb5}
+						className={cn(styles.mb5, styles.locaimg)}
 					/>
 					<Image
 						src={images.image_13.url}
 						alt="画像13"
 						width={images.image_13.width}
 						height={images.image_13.height}
-						className={styles.mb5}
+						className={cn(styles.mb5, styles.locaimg)}
 					/>
 					<Image
 						src={images.image_14.url}
 						alt="画像14"
 						width={images.image_14.width}
 						height={images.image_14.height}
-						className={styles.mb5}
+						className={cn(styles.mb5, styles.locaimg)}
 					/>
 					<Image
 						src={images.image_15.url}
 						alt="画像15"
 						width={images.image_15.width}
 						height={images.image_15.height}
+						className={cn(styles.mb5, styles.locaimg)}
 					/>
 				</div>
 
