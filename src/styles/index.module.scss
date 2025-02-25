@@ -14,7 +14,7 @@
 
 		&__content {
 			position: absolute;
-			top: 425px;
+			top: 825px;
 			left: 5%;
 			background-color: #fff;
 			width: 90%;
@@ -25,7 +25,7 @@
 
 			@media (max-width: 420px) {
 				position: absolute;
-				top: 405px;
+				top: 805px;
 				left: 5%;
 				background-color: #fff;
 				width: 90%;
@@ -35,13 +35,25 @@
 				z-index: 2;
 			}
 
-			@media (max-width: 390px) {
+			@media (max-width: 391px) {
 				position: absolute;
-				top: 355px;
+				top: 730px;
 				left: 5%;
 				background-color: #fff;
 				width: 90%;
 				height: 225px;
+				border-radius: 10px;
+				text-align: center;
+				z-index: 2;
+			}
+
+			@media (max-width: 375px) {
+				position: absolute;
+				top: 710px;
+				left: 5%;
+				background-color: #fff;
+				width: 90%;
+				height: 205px;
 				border-radius: 10px;
 				text-align: center;
 				z-index: 2;
@@ -106,6 +118,24 @@
 			z-index: 3;
 			width: 90%;
 			right: 0;
+
+			@media (max-width: 391px) {
+				position: absolute;
+				height: auto;
+				top: 480px;
+				z-index: 3;
+				width: 90%;
+				right: 0;
+			}
+
+			@media (max-width: 376px) {
+				position: absolute;
+				height: auto;
+				top: 460px;
+				z-index: 3;
+				width: 90%;
+				right: 0;
+			}
 		}
 	}
 
@@ -278,7 +308,7 @@
 						display: flex;
 						align-items: center;
 						position: absolute;
-						top: 245px;
+						top: 205px;
 						left: 50%;
 						transform: translateX(-50%);
 						z-index: 3;
@@ -288,11 +318,26 @@
 						gap: 5px;
 						width: 90%;
 
-						@media (max-width: 390px) {
+						@media (max-width: 391px) {
 							display: flex;
 							align-items: center;
 							position: absolute;
-							top: 220px;
+							top: 180px;
+							left: 50%;
+							transform: translateX(-50%);
+							z-index: 3;
+							background-color: rgba($color: #fff, $alpha: 0.8);
+							padding: 5px 15px;
+							border-radius: 5px;
+							gap: 5px;
+							width: 90%;
+						}
+
+						@media (max-width: 376px) {
+							display: flex;
+							align-items: center;
+							position: absolute;
+							top: 170px;
 							left: 50%;
 							transform: translateX(-50%);
 							z-index: 3;
