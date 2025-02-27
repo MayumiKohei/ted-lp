@@ -367,7 +367,7 @@ const LandingPage = ({
 						</p>
 					</div>
 					<Image
-						src="/images/plan_1.png"
+						src="/images/plan1.png"
 						alt="プラン１"
 						width={367}
 						height={428}
@@ -502,7 +502,7 @@ const LandingPage = ({
 						</p>
 					</div>
 					<Image
-						src="/images/plan_2_3.png"
+						src="/images/plan2.png"
 						alt="プラン2"
 						width={367}
 						height={428}
@@ -639,7 +639,7 @@ const LandingPage = ({
 						</p>
 					</div>
 					<Image
-						src="/images/plan_2_3.png"
+						src="/images/plan2.png"
 						alt="プラン3"
 						width={367}
 						height={428}
