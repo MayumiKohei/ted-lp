@@ -318,6 +318,21 @@
 						gap: 5px;
 						width: 90%;
 
+						@media (max-width: 415px) {
+							display: flex;
+							align-items: center;
+							position: absolute;
+							top: 185px;
+							left: 50%;
+							transform: translateX(-50%);
+							z-index: 3;
+							background-color: rgba($color: #fff, $alpha: 0.8);
+							padding: 5px 15px;
+							border-radius: 5px;
+							gap: 5px;
+							width: 90%;
+						}
+
 						@media (max-width: 391px) {
 							display: flex;
 							align-items: center;
@@ -362,6 +377,24 @@
 							gap: 5px;
 							width: 90%;
 
+							@media (max-width: 415px) {
+								display: flex;
+								align-items: center;
+								position: absolute;
+								top: 180px;
+								left: 50%;
+								transform: translateX(-50%);
+								z-index: 3;
+								background-color: rgba(
+									$color: #fff,
+									$alpha: 0.8
+								);
+								padding: 5px 15px;
+								border-radius: 5px;
+								gap: 5px;
+								width: 90%;
+							}
+
 							@media (max-width: 390px) {
 								display: flex;
 								align-items: center;
@@ -380,16 +413,50 @@
 								width: 90%;
 							}
 
+							@media (max-width: 381px) {
+								display: flex;
+								align-items: center;
+								position: absolute;
+								top: 170px;
+								left: 50%;
+								transform: translateX(-50%);
+								z-index: 3;
+								background-color: rgba(
+									$color: #fff,
+									$alpha: 0.8
+								);
+								padding: 5px 15px;
+								border-radius: 5px;
+								gap: 5px;
+								width: 90%;
+							}
+
 							p {
+								@media (max-width: 420px) {
+									font-size: 12px;
+								}
+
 								@media (max-width: 390px) {
 									font-size: 11px;
+								}
+
+								@media (max-width: 381px) {
+									font-size: 10px;
 								}
 							}
 						}
 
 						p {
+							@media (max-width: 420px) {
+								font-size: 12px;
+							}
+
 							@media (max-width: 390px) {
 								font-size: 11px;
+							}
+
+							@media (max-width: 381px) {
+								font-size: 10px;
 							}
 						}
 					}
@@ -421,6 +488,12 @@
 					font-family: "Yu Gothic", "游ゴシック", sans-serif;
 					font-size: 15px;
 					font-weight: 700;
+
+					@media (max-width: 400px) {
+						font-family: "Yu Gothic", "游ゴシック", sans-serif;
+						font-size: 13px;
+						font-weight: 700;
+					}
 				}
 
 				span {
@@ -428,6 +501,13 @@
 					font-size: 31px;
 					font-weight: 600;
 					color: #fc7171;
+
+					@media (max-width: 400px) {
+						font-family: "Yu Mincho", "游明朝", "YuMincho", serif;
+						font-size: 27px;
+						font-weight: 600;
+						color: #fc7171;
+					}
 				}
 
 				&__tax {
@@ -634,6 +714,10 @@
 
 .yen {
 	font-size: 25px !important;
+
+	@media (max-width: 400px) {
+		font-size: 22px !important;
+	}
 }
 
 .line {
