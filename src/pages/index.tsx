@@ -13,12 +13,10 @@ const client = createClient({
 
 export const getStaticProps: GetStaticProps = async () => {
 	const imageData = await client.get({ endpoint: "image" });
-	const priceData = await client.get({ endpoint: "price" });
 
 	return {
 		props: {
 			images: imageData.contents[0], // contents配列の最初の要素を渡す
-			prices: priceData.contents[0],
 		},
 	};
 };
