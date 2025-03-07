@@ -207,12 +207,13 @@ const LandingPage = ({
 			</div>
 
 			<div>
-				<h2 className={cn(styles.h2, styles.c70)}>
-					宮古島のロケーション
-				</h2>
-				<p className={cn(styles.c70, styles.trj10, styles.mb)}>
-					“Miyako Island’s location”
-				</p>
+				<Image
+					src="/images/ロケーション.png"
+					alt="ロケーション"
+					width={430}
+					height={80}
+					className={styles.container__location__img}
+				/>
 				<Image
 					src={images.image_9.url}
 					alt="画像9"
@@ -265,25 +266,13 @@ const LandingPage = ({
 			</div>
 
 			<div className={styles.container__last}>
-				<p className={styles.container__last__1}>
-					あなたの大切な瞬間を、この一枚に…
-				</p>
-				<p className={styles.container__last__2}>
-					We look forward to
-					<br />
-					welcoming you!!
-				</p>
-				<p className={styles.container__last__name}>ted</p>
 				<Image
-					src={images.image_16.url}
-					alt="画像16"
-					width={images.image_16.width}
-					height={images.image_16.height}
+					src="/images/フッター.png"
+					alt="フッター"
+					width={430}
+					height={753}
 					className={styles.container__last__img}
 				/>
-				<p className={styles.container__last__footer}>
-					&copy; TEDDY PHOTO
-				</p>
 			</div>
 		</div>
 	);
