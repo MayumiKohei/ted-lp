@@ -200,7 +200,7 @@ const LandingPage = ({
 				<Image
 					src="/images/ラインボタン.svg"
 					alt="公式ラインボタン"
-					width={340}
+					width={336}
 					height={52}
 					className={styles.container__shooting__line__img}
 				/>

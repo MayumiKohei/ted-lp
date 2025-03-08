@@ -21,7 +21,8 @@
 					transform: translateX(-50%);
 					z-index: 3;
 					filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
-					width: 254px;
+					width: 59%;
+					height: auto;
 				}
 			}
 		}
@@ -120,6 +121,8 @@
 					z-index: 3;
 					max-width: none;
 					filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
+					width: 79%;
+					height: auto;
 				}
 			}
 		}
@@ -146,6 +149,8 @@
 					z-index: 3;
 					max-width: none;
 					filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
+					width: 79%;
+					height: auto;
 				}
 			}
 		}
@@ -172,6 +177,8 @@
 					z-index: 3;
 					max-width: none;
 					filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
+					width: 79%;
+					height: auto;
 				}
 			}
 		}
@@ -183,8 +190,8 @@
 		&__line {
 			&__mini {
 				position: absolute;
-				width: 270px;
-				height: 42px;
+				width: 63%;
+				height: auto;
 				top: 15%;
 				left: 20%;
 				filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
@@ -196,6 +203,8 @@
 				transform: translateX(-50%);
 				margin-bottom: 70px;
 				filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
+				width: 78%;
+				height: auto;
 			}
 		}
 		&__img {
